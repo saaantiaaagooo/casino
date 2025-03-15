@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+        
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>proyectoCasino</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.thoughtworks.sde</groupId>
+            <artifactId>source_sjs0.6_2.12.0-RC2</artifactId>
+            <version>3.1.0</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.bizmda.bizsip</groupId>
+            <artifactId>source-spring-boot-starter</artifactId>
+            <version>1.0.0.Beta6</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.thoughtworks.sde</groupId>
+            <artifactId>source_2.10</artifactId>
+            <version>170-f2b33414</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+      <version>1.18.26</version> <!-- Asegúrate de usar la versión actual -->
+      <scope>provided</scope>
+   </dependency>
+        
+        <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>42.7.5</version>
+            </dependency>
+  
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <exec.mainClass>com.mycompany.proyectocasino.ProyectoCasino</exec.mainClass>
+    </properties>
+    
+    
+    <build>
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*.jpg</include> <!-- Incluye archivos JPG -->
+                <include>**/*.png</include> <!-- Incluye archivos PNG -->
+                <include>**/*.gif</include> <!-- Incluye archivos PNG -->
+            </includes>
+            <filtering>false</filtering> <!-- Desactiva filtrado para archivos binarios -->
+        </resource>
+    </resources>
+</build>
+    
+       
+        
+        
+
+</project>
